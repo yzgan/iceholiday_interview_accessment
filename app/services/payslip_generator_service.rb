@@ -1,7 +1,11 @@
 # frozen_string_literal: true
 
+require_relative '../../lib/payslip_calculator'
+
 # app/services/payslip_generator_service.rb
 class PayslipGeneratorService
+  include PayslipCalculator
+
   def initialize(name, annual_salary)
     @name = name
     @annual_salary = annual_salary.to_f

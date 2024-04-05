@@ -4,9 +4,7 @@ require 'test_helper'
 
 # test/unit/payslip_test.rb
 class PayslipTest < ActiveSupport::TestCase
-  test 'generate monthly payslip' do
-    assert Object.method_defined?(:generate_monthly_payslip)
-  end
+  include PayslipCalculator
 
   test 'montly income' do
     annual_salary = 60_000

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-# lib/payslip.rb
-module Payslip
+# lib/payslip_calculator.rb
+module PayslipCalculator
   SALARY_RANGE = [0..20_000, 20_001..40_000, 40_001..80_000, 80_001..180_000, 180_001..Float::INFINITY].freeze
   TAX_RATE = [0, 0.1, 0.2, 0.3, 0.4].freeze
 
