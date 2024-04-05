@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# app/services/payslip_generator_service.rb
 class PayslipGeneratorService
   def initialize(name, annual_salary)
     @name = name

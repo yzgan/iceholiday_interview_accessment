@@ -1,4 +1,6 @@
-require "test_helper"
+# frozen_string_literal: true
+
+require 'test_helper'
 
 class PayslipsControllerTest < ActionDispatch::IntegrationTest
   test 'create able to generate monthly payslip' do
