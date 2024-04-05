@@ -1,11 +1,10 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  employee_name: MyString
-  annual_salary: 9.99
-  monthly_income_tax: 9.99
-
-two:
-  employee_name: MyString
-  annual_salary: 9.99
-  monthly_income_tax: 9.99
+beng:
+  employee_name: Beng
+  annual_salary: 80_000
+  monthly_income_tax: 833.33
+muthu:
+  employee_name: Muthu
+  annual_salary: 100_000
+  monthly_income_tax: 1333.33

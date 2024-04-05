@@ -9,6 +9,6 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   defaults format: :json do
-    resources :payslips, only: %i[create]
+    resources :payslips, only: %i[index create]
   end
 end
