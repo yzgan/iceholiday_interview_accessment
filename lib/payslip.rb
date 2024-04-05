@@ -5,11 +5,9 @@ module Payslip
   SALARY_RANGE = [0..20_000, 20_001..40_000, 40_001..80_000, 80_001..180_000, 180_001..Float::INFINITY].freeze
   TAX_RATE = [0, 0.1, 0.2, 0.3, 0.4].freeze
 
-  private
-
-  def montly_income(annual_salary) = (annual_salary.to_f / 12).round(2)
+  def monthly_income(annual_salary) = (annual_salary.to_f / 12).round(2)
   def monthly_income_tax(annual_salary) = (annual_income_tax(annual_salary).to_f / 12).round(2)
-  def net_monthly_income(annual_salary) = montly_income(annual_salary) - monthly_income_tax(annual_salary)
+  def net_monthly_income(annual_salary) = monthly_income(annual_salary) - monthly_income_tax(annual_salary)
 
   def taxable_amount(annual_salary)
     SALARY_RANGE.map do |range|
