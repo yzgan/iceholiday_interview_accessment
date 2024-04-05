@@ -4,7 +4,9 @@ require 'test_helper'
 
 class PayslipsControllerTest < ActionDispatch::IntegrationTest
   test 'create able to generate monthly payslip' do
-    post payslips_path, params: { employee_name: 'Annie', annual_salary: 60_000 }
+    assert_difference 'Payslip.count', 1 do
+      post payslips_path, params: { employee_name: 'Annie', annual_salary: 60_000 }
+    end
     assert_response :success
 
     assert_equal 'Annie', @response.parsed_body['employee_name']
